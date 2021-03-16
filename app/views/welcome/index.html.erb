@@ -1,0 +1,12 @@
+<h1>Olá, sou o Trabalho 5 de Programação Web</h1>
+<h2>As entidades e relações do sistema são:</h2>
+<ul>
+    <li>Cliente 1:1 Endereço | Cliente possui um endereço, endereço pertence a um cliente</li>
+    <li>Cliente 1:N Pedido | Cliente possui vários pedidos, pedido pertence a um cliente</li>
+    <li>Pedido N:N Produto | Pedido contém vários produtos, um produto pode pertencer a vários pedidos</li>
+</ul>
+    
+<%= link_to 'Clientes', clientes_path %>
+<%= link_to 'Endereços', enderecos_path %>
+<%= link_to 'Produtos', produtos_path %>
+<%= link_to 'Pedidos', pedidos_path %>

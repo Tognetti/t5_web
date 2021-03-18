@@ -49,10 +49,6 @@ class ClientesController < ApplicationController
 
   # DELETE /clientes/1 or /clientes/1.json
   def destroy
-    @endereco = Endereco.find_by_cliente_id(@cliente.id)
-    if @endereco != nil
-      @endereco.destroy
-    end
     @cliente.destroy
     respond_to do |format|
       format.html { redirect_to clientes_url, notice: "Cliente was successfully destroyed." }

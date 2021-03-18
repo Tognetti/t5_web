@@ -21,7 +21,7 @@
         <td><%= endereco.numero %></td>
         <td><%= endereco.bairro %></td>
         <td><%= endereco.cidade %></td>
-        <td><%= endereco.cliente_id %></td>
+        <td><%= endereco.cliente.nome %></td>
         <td><%= link_to 'Show', endereco %></td>
         <td><%= link_to 'Edit', edit_endereco_path(endereco) %></td>
         <td><%= link_to 'Destroy', endereco, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -32,4 +32,5 @@
 
 <br>
 
-<%= link_to 'New Endereco', new_endereco_path %>
+<%= link_to 'Novo Endereço', new_endereco_path %><br>
+<%= link_to 'Início', root_path %>

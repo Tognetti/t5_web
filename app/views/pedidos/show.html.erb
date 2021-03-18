@@ -12,7 +12,16 @@
 
 <p>
   <strong>Cliente:</strong>
-  <%= @pedido.cliente_id %>
+  <%= @pedido.cliente.nome %>
+</p>
+
+<p>
+  <strong>Produtos:</strong>
+  <ul>
+    <% @pedido.produtos.each do |p| %>
+      <li><%= p.nome %></li>
+    <% end %>
+  </ul>
 </p>
 
 <%= link_to 'Edit', edit_pedido_path(@pedido) %> |
